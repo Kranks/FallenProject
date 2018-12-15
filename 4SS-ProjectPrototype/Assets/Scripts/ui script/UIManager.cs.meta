@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: ddd8bf0ddc68f7c47957806eca440a7a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - MenuEquipement: {fileID: 1314070097013358, guid: 2f00e533b38d77146b6625cd4f4b8ac6,
+      type: 2}
+  - MenuSynergie: {instanceID: 0}
+  - MenuParametre: {instanceID: 0}
+  - bouleDeGlace: {instanceID: 0}
+  - skill1: {instanceID: 0}
+  - skill2: {instanceID: 0}
+  - skill3: {instanceID: 0}
+  - skill4: {instanceID: 0}
+  - skill5: {instanceID: 0}
+  - skill6: {instanceID: 0}
+  - skill7: {instanceID: 0}
+  - player: {instanceID: 0}
+  - casque: {instanceID: 0}
+  - torse: {instanceID: 0}
+  - poignetDroit: {instanceID: 0}
+  - poignetGauche: {instanceID: 0}
+  - jambes: {instanceID: 0}
+  - arme: {instanceID: 0}
+  - bijou: {instanceID: 0}
+  - pieds: {instanceID: 0}
+  - vie: {instanceID: 0}
+  - attaquePhysique: {instanceID: 0}
+  - defensePhysique: {instanceID: 0}
+  - precision: {instanceID: 0}
+  - speed: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

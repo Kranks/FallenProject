@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c10113818afb449351b657ce0800c, type: 3}
+  m_Name: FireElemental
+  m_EditorClassIdentifier: 
+  enemyName: FireElemental
+  life: 120
+  speed: 5
+  precisionCoef: 1.3
+  dodgeCoef: 0.2
+  shortRange: 0
+  persoUp: {fileID: 21300082, guid: b77c731711d5b944b8e6a1f4219815d8, type: 3}
+  persoDown: {fileID: 21300010, guid: b77c731711d5b944b8e6a1f4219815d8, type: 3}
+  persoLeft: {fileID: 21300032, guid: b77c731711d5b944b8e6a1f4219815d8, type: 3}
+  persoRight: {fileID: 21300056, guid: b77c731711d5b944b8e6a1f4219815d8, type: 3}
+  spells:
+  - {fileID: 11400000, guid: a3693d8ca1f1ed64a90fe9ffb96309ab, type: 2}

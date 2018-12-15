@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c10113818afb449351b657ce0800c, type: 3}
+  m_Name: MageVert
+  m_EditorClassIdentifier: 
+  enemyName: 
+  life: 90
+  speed: 6
+  precisionCoef: 10
+  dodgeCoef: 10
+  shortRange: 0
+  persoUp: {fileID: 21300084, guid: 8b10a6219a267bf4296e02bb14f5a008, type: 3}
+  persoDown: {fileID: 21300014, guid: 8b10a6219a267bf4296e02bb14f5a008, type: 3}
+  persoLeft: {fileID: 21300038, guid: 8b10a6219a267bf4296e02bb14f5a008, type: 3}
+  persoRight: {fileID: 21300062, guid: 8b10a6219a267bf4296e02bb14f5a008, type: 3}
+  spells:
+  - {fileID: 11400000, guid: a3693d8ca1f1ed64a90fe9ffb96309ab, type: 2}
+  - {fileID: 11400000, guid: 314c40d65f90c8e418db9dc1d875d554, type: 2}
+  - {fileID: 11400000, guid: 1ed58b6939ff5e04592111fcb39ed7b8, type: 2}

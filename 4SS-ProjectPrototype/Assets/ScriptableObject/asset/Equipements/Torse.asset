@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcafd7b0554ac344182013df89bf74d7, type: 3}
+  m_Name: Torse
+  m_EditorClassIdentifier: 
+  nom: mesh de fer
+  life: 10
+  attack: 0
+  defence: 15
+  criticalRate: 0
+  criticalDamage: 0
+  speed: 1
+  competence: {fileID: 11400000, guid: 314c40d65f90c8e418db9dc1d875d554, type: 2}
+  tag: torse
+  spriteUI: {fileID: 21300000, guid: 6b5fe0dcd6a4fec42b7aa208751b12ff, type: 3}

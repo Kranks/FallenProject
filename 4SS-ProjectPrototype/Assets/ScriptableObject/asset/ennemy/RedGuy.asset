@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3c10113818afb449351b657ce0800c, type: 3}
+  m_Name: RedGuy
+  m_EditorClassIdentifier: 
+  enemyName: RedGuy
+  life: 100
+  speed: 4
+  range: 3
+  precisionCoef: 1.2
+  dodgeCoef: 0.1
+  persoUp: {fileID: 21300174, guid: 8b10a6219a267bf4296e02bb14f5a008, type: 3}
+  persoDown: {fileID: 21300106, guid: 8b10a6219a267bf4296e02bb14f5a008, type: 3}
+  persoLeft: {fileID: 21300130, guid: 8b10a6219a267bf4296e02bb14f5a008, type: 3}
+  persoRight: {fileID: 21300154, guid: 8b10a6219a267bf4296e02bb14f5a008, type: 3}

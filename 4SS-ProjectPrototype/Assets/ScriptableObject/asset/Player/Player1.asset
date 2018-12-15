@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f4441298332734bb127acc7f08b76f, type: 3}
+  m_Name: Player1
+  m_EditorClassIdentifier: 
+  life: 100
+  attack: 5
+  defence: 5
+  speed: 5
+  criticalRate: 2
+  criticalDamage: 30
+  equipements:
+  - {fileID: 11400000, guid: 122116ac7989eaa42a0325d76734b251, type: 2}
+  - {fileID: 11400000, guid: 5a066024ead684f45964b4ec14a7cf83, type: 2}
+  - {fileID: 11400000, guid: f7b520d238e043f489f891ea987146e0, type: 2}
+  - {fileID: 11400000, guid: 9ea3b301bf2cb7945a048e673f6e3d9e, type: 2}
+  - {fileID: 11400000, guid: 1ed19dfa06c424540941f4f1730c878d, type: 2}
+  - {fileID: 11400000, guid: cf67e0c20e38b56458f323da129b773b, type: 2}
+  - {fileID: 11400000, guid: 35ae91173e044d341b261a3cdf4254d8, type: 2}
