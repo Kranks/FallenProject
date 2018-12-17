@@ -10,7 +10,7 @@ public class CombatState : StateMachineBehaviour {
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         enemy = animator.GetComponent<EnemyController2D>();
         foreach (var spell in enemy.infos.spells) {
-            spellTimer.Add(spell, spell.cooldown);
+            spellTimer.Add(spell, 0);
         }
 	}
 
@@ -23,7 +23,7 @@ public class CombatState : StateMachineBehaviour {
             spellTimer[spell] -= Time.deltaTime;            
             if (spellTimer[spell] <= 0f && disToTarget <= spell.portee) {
                 //Instantiate(spell.prefab, enemy.GetComponentInChildren<Transform>().position, Quaternion.identity);
-                spell.launch(enemy.GetComponentInChildren<Transform>().position, enemy.currentTarget);
+                spell.launch(enemy.spawnSkill.transform.position, enemy.currentTarget);
                 spellTimer[spell] = spell.cooldown;
             }
         }

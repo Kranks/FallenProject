@@ -19,6 +19,13 @@ public class EnemyController2D : MonoBehaviour {
     private Animator states;
 
     public float currentlife;
+    
+    public GameObject spawnSkillLeft;
+    public GameObject spawnSkillRight;
+    public GameObject spawnSkillUp;
+    public GameObject spawnSkillDown;
+    [HideInInspector]
+    public GameObject spawnSkill;
 
     public float range;
     public float maxRange;
@@ -36,6 +43,7 @@ public class EnemyController2D : MonoBehaviour {
 
         currentlife = infos.life;
         infos.SetRange(this);
+        spawnSkill = spawnSkillDown;
     }
 
     void Update() {
@@ -69,15 +77,19 @@ public class EnemyController2D : MonoBehaviour {
             Vector2 dirToTarget = (target.position - transform.position).normalized;
             if (Vector2.Angle(Vector2.up, dirToTarget) < 45f) {
                 image.sprite = infos.persoUp;
+                spawnSkill = spawnSkillUp;
                 view.UpdateDirection(Vector2.up);
             } else if (Vector2.Angle(Vector2.down, dirToTarget) < 45f) {
                 image.sprite = infos.persoDown;
+                spawnSkill = spawnSkillDown;
                 view.UpdateDirection(Vector2.down);
             } else if (Vector2.Angle(Vector2.right, dirToTarget) < 45f) {
                 image.sprite = infos.persoRight;
+                spawnSkill = spawnSkillRight;
                 view.UpdateDirection(Vector2.right);
             } else if (Vector2.Angle(Vector2.left, dirToTarget) < 45f) {
                 image.sprite = infos.persoLeft;
+                spawnSkill = spawnSkillLeft;
                 view.UpdateDirection(Vector2.left);
             }
         }

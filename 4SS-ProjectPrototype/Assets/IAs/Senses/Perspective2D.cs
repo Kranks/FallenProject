@@ -8,7 +8,6 @@ public class Perspective2D : Sense {
     public float viewAngle;
     public float viewRadius;
     public Aspect.AspectTypes targetAspect;
-
     private Vector2 direction = Vector2.down;
 
     public List<Transform> visibleTargets = new List<Transform>();
@@ -22,7 +21,7 @@ public class Perspective2D : Sense {
             Vector2 dirToTarget = (target.position - transform.position).normalized;
             if (Vector2.Angle(direction, dirToTarget) < viewAngle / 2) {
                 float dstToTarget = Vector2.Distance(transform.position, target.position);
-                hit = Physics2D.Raycast(transform.position, dirToTarget, dstToTarget);                
+                hit = Physics2D.Raycast(/*transform.position*/GetComponent<EnemyController2D>().spawnSkill.transform.position, dirToTarget, dstToTarget);              
                 if (hit) {                    
                     Aspect aspect = hit.collider.GetComponent<Aspect>();
                     if (aspect != null) {

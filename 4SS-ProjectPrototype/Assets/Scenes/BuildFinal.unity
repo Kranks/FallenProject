@@ -113,6 +113,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &10490033
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4900933907282920, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.4081926
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.67942464
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.002674122
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999964
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642203407112236, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
+      propertyPath: m_Name
+      value: enemi
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!114 &19423957 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114173566438954200, guid: 2f8215556d55ecc45b809964e23a904b,
@@ -228,12 +274,14 @@ MonoBehaviour:
   - {fileID: 110520, guid: b18fd8b5bad5b3a468b99ce55b51fbf7, type: 2}
   ennemyTiles:
   - {fileID: 1642203407112236, guid: 60da6787883d19f43932e72e23f53f17, type: 2}
-  - {fileID: 1642203407112236, guid: a3bbfb160fdc0f64ab1a3836f424aebe, type: 2}
-  - {fileID: 1642203407112236, guid: a05bdb938f0540143b05b2fe4a295f0d, type: 2}
+  - {fileID: 1642203407112236, guid: 0ec59ce9f279e484d99cc49ec9ff260b, type: 2}
+  - {fileID: 1642203407112236, guid: 21e6e487691f5f14688d4f2173adde4b, type: 2}
+  - {fileID: 1642203407112236, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
   horizontalOuterWallTiles:
   - {fileID: 110520, guid: e3b526d46c30cf247af79f2f5d65da4d, type: 2}
   - {fileID: 110520, guid: 0fcad8667dbb1444a86872a881e9c3f7, type: 2}
   - {fileID: 110520, guid: 74bcd80ac74327a459891eacf17c0ed9, type: 2}
+  - {fileID: 1642203407112236, guid: 21e6e487691f5f14688d4f2173adde4b, type: 2}
   verticalOuterWallTiles:
   - {fileID: 110520, guid: e3b526d46c30cf247af79f2f5d65da4d, type: 2}
   - {fileID: 110520, guid: 0fcad8667dbb1444a86872a881e9c3f7, type: 2}
