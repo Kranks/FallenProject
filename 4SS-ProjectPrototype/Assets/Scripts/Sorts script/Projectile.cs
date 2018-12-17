@@ -50,7 +50,7 @@ public class Projectile : MonoBehaviour {
         player.life -= resultDamage;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    /*private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Obstacle") {
             Destroy(this.gameObject);
         }
@@ -59,6 +59,24 @@ public class Projectile : MonoBehaviour {
             Destroy(this.gameObject);
         }
         if (collision.gameObject.tag == "Player") {
+            ResolveDamage(collision.gameObject.GetComponent<PlayerController>());
+            Destroy(this.gameObject);
+        }
+    }*/
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            Destroy(this.gameObject);
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            ResolveDamage(collision.gameObject.GetComponent<EnemyController2D>());
+            Destroy(this.gameObject);
+        }
+        if (collision.gameObject.tag == "Player")
+        {
             ResolveDamage(collision.gameObject.GetComponent<PlayerController>());
             Destroy(this.gameObject);
         }

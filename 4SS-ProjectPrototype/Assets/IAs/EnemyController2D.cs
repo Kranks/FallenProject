@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController2D : MonoBehaviour {
 
@@ -17,6 +18,7 @@ public class EnemyController2D : MonoBehaviour {
     public List<Transform> waypoints = new List<Transform>();
 
     private Animator states;
+    public Image vie;
 
     public float currentlife;
     
@@ -52,7 +54,8 @@ public class EnemyController2D : MonoBehaviour {
             this.gameObject.SetActive(false);
             
         }
-        
+        vie.fillAmount = (float)currentlife / (float)100.0;
+
         view.UpdateSense();
         if (view.IsTargetVisible()) {
             currentTarget = view.target();

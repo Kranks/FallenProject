@@ -131,6 +131,48 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1768434215}
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1001 &129930102
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4900933907282920, guid: 60da6787883d19f43932e72e23f53f17, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.4081926
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: 60da6787883d19f43932e72e23f53f17, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.67942464
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: 60da6787883d19f43932e72e23f53f17, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: 60da6787883d19f43932e72e23f53f17, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: 60da6787883d19f43932e72e23f53f17, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: 60da6787883d19f43932e72e23f53f17, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.002674122
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: 60da6787883d19f43932e72e23f53f17, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999964
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900933907282920, guid: 60da6787883d19f43932e72e23f53f17, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 60da6787883d19f43932e72e23f53f17, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!114 &136474913 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114070654719113614, guid: 2f8215556d55ecc45b809964e23a904b,
@@ -223,9 +265,9 @@ MonoBehaviour:
   - {fileID: 1315006291838470, guid: a0a4db87817cdc44384a0fd97fd15f48, type: 2}
   ennemyTiles:
   - {fileID: 1642203407112236, guid: 60da6787883d19f43932e72e23f53f17, type: 2}
-  - {fileID: 1642203407112236, guid: a3bbfb160fdc0f64ab1a3836f424aebe, type: 2}
-  - {fileID: 1642203407112236, guid: a05bdb938f0540143b05b2fe4a295f0d, type: 2}
-  - {fileID: 1642203407112236, guid: c56a970d11e0ea4428ad0dc350508146, type: 2}
+  - {fileID: 1642203407112236, guid: 0ec59ce9f279e484d99cc49ec9ff260b, type: 2}
+  - {fileID: 1642203407112236, guid: 21e6e487691f5f14688d4f2173adde4b, type: 2}
+  - {fileID: 1642203407112236, guid: e94c327bcd87adb429fa7ac7ac78fa81, type: 2}
   horizontalOuterWallTiles:
   - {fileID: 1959103514288356, guid: fb5d3c7d9b755794ab090a3ba75f26dc, type: 2}
   - {fileID: 1081189741619604, guid: 4810a6e7a45cf404cb503f363aefa933, type: 2}
