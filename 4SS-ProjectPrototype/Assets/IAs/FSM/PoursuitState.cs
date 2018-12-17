@@ -20,7 +20,7 @@ public class PoursuitState : StateMachineBehaviour {
                 // AttaqueState
                 animator.SetBool("atRange", true);
             }
-            animator.transform.position = Vector3.MoveTowards(animator.transform.position, enemy.currentTarget.position, enemy.infos.speed * Time.deltaTime);
+            animator.transform.position = Vector3.MoveTowards(animator.transform.position, enemy.currentTarget.position, enemy.infos.stats.speed * Time.deltaTime);
             
         } else {
             elapsedTime += Time.deltaTime;

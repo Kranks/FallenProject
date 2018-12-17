@@ -34,15 +34,14 @@ public class EnemyController2D : MonoBehaviour {
 
         image.sprite = infos.persoDown;
 
-        currentlife = infos.life;
+        currentlife = infos.stats.life;
         infos.SetRange(this);
     }
 
     void Update() {
 
         if (currentlife <= 0) {
-            this.gameObject.SetActive(false);
-            
+            this.gameObject.SetActive(false); 
         }
         
         view.UpdateSense();

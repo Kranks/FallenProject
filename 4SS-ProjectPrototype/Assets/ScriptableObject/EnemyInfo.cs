@@ -7,11 +7,7 @@ public class EnemyInfo : ScriptableObject {
 
     public string enemyName;
 
-    public float life;
-    public float speed;
-
-    public float precisionCoef;
-    public float dodgeCoef;
+    public Stats stats;
 
     public bool shortRange; 
 

@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Name: earthElemental
   m_EditorClassIdentifier: 
   enemyName: zircon
-  life: 140
-  speed: 4
-  precisionCoef: 1.2
-  dodgeCoef: 0.02
+  stats: {fileID: 11400000, guid: 962116505e8ff5741ad84cfa6d8c4361, type: 2}
   shortRange: 0
   persoUp: {fileID: 21300092, guid: b77c731711d5b944b8e6a1f4219815d8, type: 3}
   persoDown: {fileID: 21300020, guid: b77c731711d5b944b8e6a1f4219815d8, type: 3}

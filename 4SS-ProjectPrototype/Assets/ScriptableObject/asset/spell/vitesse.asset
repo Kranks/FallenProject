@@ -8,16 +8,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcafd7b0554ac344182013df89bf74d7, type: 3}
-  m_Name: Casque
+  m_Script: {fileID: 11500000, guid: 78865de6f2879bf408ef26bdb512a020, type: 3}
+  m_Name: vitesse
   m_EditorClassIdentifier: 
-  nom: 
-  life: 10
+  life: 0
   attack: 0
-  defence: 5
+  defence: 0
+  speed: 10
   criticalRate: 0
   criticalDamage: 0
-  speed: 0
-  competence: {fileID: 11400000, guid: d559033baecb1684688d12639cf6b2c8, type: 2}
-  tag: casque
-  spriteUI: {fileID: 21300000, guid: afbe5a6df8ec9b9439ae0018637180e6, type: 3}
+  precisionCoef: 0
+  dodgeCoef: 0

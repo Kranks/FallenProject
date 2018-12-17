@@ -11,12 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f4441298332734bb127acc7f08b76f, type: 3}
   m_Name: Player1
   m_EditorClassIdentifier: 
-  life: 100
-  attack: 5
-  defence: 5
-  speed: 5
-  criticalRate: 2
-  criticalDamage: 30
+  stats: {fileID: 11400000, guid: 95710aca78dc9a54ab0afc3463f06b35, type: 2}
   equipements:
   - {fileID: 11400000, guid: 122116ac7989eaa42a0325d76734b251, type: 2}
   - {fileID: 11400000, guid: 5a066024ead684f45964b4ec14a7cf83, type: 2}

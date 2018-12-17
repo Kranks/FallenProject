@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         image = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        life = player.life;
+        life = player.stats.life;
 
         dicoTagEquip = player.GenerateDico();
     }
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-        body.MovePosition(body.position + new Vector2(moveHorizontal, moveVertical) * player.speed * Time.deltaTime);
+        body.MovePosition(body.position + new Vector2(moveHorizontal, moveVertical) * player.stats.speed * Time.deltaTime);
         
        // GetInputSort();
         getInputDeplacement();
