@@ -74,7 +74,7 @@ public class Room {
             /*Debug.Log("pourcentageCreationHallway : " + pourcentageCreationHallway + " pourcentageCreationHallway : "+randomPourcentage);*/
             if (pourcentageCreationHallway >= randomPourcentage)
             {
-                hallwaySize = Random.Range(2, rows);
+                hallwaySize = Random.Range(4, rows);
                 position = Random.Range(0, (rows - hallwaySize));
                 /*
                 Debug.Log("le nombre de colonne pour la classe Room est : " + columns);
@@ -268,7 +268,7 @@ public class Room {
     public Hallway findHallwayEndPortal()
     {
         Hallway endPortal = new Hallway();
-        int hallwaySize = Random.Range(2, 3);
+        int hallwaySize = Random.Range(1, 1);
         int position = Random.Range(0, (rows - hallwaySize));
         Vector3 firstLocalSquare = new Vector3();
         Vector3 lastLocalSquare = new Vector3();
