@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4b2a8d4481a68c46b68313823da62dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: EndScene
+  nextScene: Level2
 --- !u!212 &212502055925099328
 SpriteRenderer:
   m_ObjectHideFlags: 1

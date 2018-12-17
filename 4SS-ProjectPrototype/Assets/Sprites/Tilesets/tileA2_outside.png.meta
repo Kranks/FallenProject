@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 4a0f39ee6db4b1e4591a449b372b3991
+guid: 1e26898032aa1124c9387205eb02056e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Floor5
-    21300002: Floor6
-    21300004: Floor8
-    21300006: Floor7
+    21300000: Floor1
+    21300002: Floor2
+    21300004: Floor3
+    21300006: Floor4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -88,31 +88,31 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Floor5
+      name: Floor1
       rect:
         serializedVersion: 2
-        x: 104
-        y: 539
+        x: 33
+        y: 480
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 260a0fc9376a78141b18b3ff5fac9f3f
+      spriteID: 7501a1949929db142b23c2799c292b04
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor6
+      name: Floor2
       rect:
         serializedVersion: 2
-        x: 247
-        y: 630
+        x: 57
+        y: 411
         width: 32
         height: 32
       alignment: 0
@@ -122,17 +122,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1648f4d3fb0a73845afe7cac3fdc5d24
+      spriteID: dc793230aed0fc14f9261a30e267e47f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor8
+      name: Floor3
       rect:
         serializedVersion: 2
-        x: 53
-        y: 637
+        x: 5
+        y: 322
         width: 32
         height: 32
       alignment: 0
@@ -142,17 +142,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a41badf840a59241bea89dcafa9ca96
+      spriteID: 5999c882610c5ae40bad190f6b436aeb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor7
+      name: Floor4
       rect:
         serializedVersion: 2
-        x: 202
-        y: 492
+        x: 12
+        y: 423
         width: 32
         height: 32
       alignment: 0
@@ -162,7 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d56f79a2708bb624199b812be1ebb602
+      spriteID: 8704f53bc2a9bf14fb1445cea9865a26
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b56aa266f12d6584a9830c1adf6e45d1
+    spriteID: ee85a5d7bec9dc5428d14d14976f9a40
     vertices: []
     indices: 
     edges: []
