@@ -33,6 +33,7 @@ public class EnemyController2D : MonoBehaviour {
     public float maxRange;
     public float timeout = 4.0f;
     public float elapsedTime = 0.0f;
+    private float maxLife;
 
     void Start() {
         body = GetComponent<Rigidbody2D>();
@@ -46,6 +47,7 @@ public class EnemyController2D : MonoBehaviour {
         currentlife = infos.stats.life;
         infos.SetRange(this);
         spawnSkill = spawnSkillDown;
+        maxLife = currentlife;
     }
 
     void Update() {
@@ -53,7 +55,7 @@ public class EnemyController2D : MonoBehaviour {
         if (currentlife <= 0) {
             this.gameObject.SetActive(false); 
         }
-        vie.fillAmount = (float)currentlife / (float)100.0;
+        vie.fillAmount = (float)currentlife / maxLife;
 
         view.UpdateSense();
         if (view.IsTargetVisible()) {
