@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 114594771439358618}
   - component: {fileID: 70144524896563052}
   m_Layer: 0
-  m_Name: enemi 3
+  m_Name: enemi 4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9046a575231a81d49aec6e6ca2425fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infos: {fileID: 11400000, guid: ca4e6da331f5be34985901755a8d877f, type: 2}
+  infos: {fileID: 11400000, guid: f108c9f9f6fe8fd4c89abf03ca5578ad, type: 2}
   currentTarget: {fileID: 0}
   waypoints: []
   vie: {fileID: 114267613114121342}
