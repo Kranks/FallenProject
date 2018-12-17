@@ -38,7 +38,7 @@ public class Projectile : MonoBehaviour {
 
     public void ResolveDamage(EnemyController2D enemy) {
         float resultDamage = damage;
-        if (Random.Range(0f, 100f) > enemy.infos.dodgeCoef) {
+        if (Random.Range(0f, 100f) > enemy.infos.stats.dodgeCoef) {
             enemy.currentlife -= resultDamage;            
         } else {
             // set feedback
@@ -46,7 +46,7 @@ public class Projectile : MonoBehaviour {
     }
 
     public void ResolveDamage(PlayerController player) {
-        float resultDamage = damage - (player.player.defence * 0.3f);
+        float resultDamage = damage - (player.player.stats.defence * 0.3f);
         player.life -= resultDamage;
     }
 

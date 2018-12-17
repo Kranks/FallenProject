@@ -43,7 +43,7 @@ public class EnemyController2D : MonoBehaviour {
 
         image.sprite = infos.persoDown;
 
-        currentlife = infos.life;
+        currentlife = infos.stats.life;
         infos.SetRange(this);
         spawnSkill = spawnSkillDown;
     }
@@ -51,8 +51,7 @@ public class EnemyController2D : MonoBehaviour {
     void Update() {
 
         if (currentlife <= 0) {
-            this.gameObject.SetActive(false);
-            
+            this.gameObject.SetActive(false); 
         }
         vie.fillAmount = (float)currentlife / (float)100.0;
 

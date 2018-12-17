@@ -50,7 +50,7 @@ public class PatrolState : StateMachineBehaviour {
                     GetNextPosition();
                     changeTarget = true;
                 } else {
-                    animator.transform.position = Vector3.MoveTowards(animator.transform.position, target.position, enemy.infos.speed * Time.deltaTime);
+                    animator.transform.position = Vector3.MoveTowards(animator.transform.position, target.position, enemy.infos.stats.speed * Time.deltaTime);
                 }
             }
         }
