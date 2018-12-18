@@ -83,8 +83,8 @@ public class UIManager : MonoBehaviour
             dicoTagUI.Add(item.gameObject.GetComponent<spellCoolDown>().equipTag, item);
         }
 
-        fillEquipement();
-        fillStat();
+        //fillEquipement();
+        //fillStat();
 
     }
 
@@ -225,6 +225,14 @@ public class UIManager : MonoBehaviour
         }
         if (Input.GetKey("escape")) {
             Application.Quit();
+        }
+    }
+
+    public void updateSkills()
+    {
+        foreach (var item in skills)
+        {
+            item.GetComponent<spellCoolDown>().initialize();
         }
     }
 }

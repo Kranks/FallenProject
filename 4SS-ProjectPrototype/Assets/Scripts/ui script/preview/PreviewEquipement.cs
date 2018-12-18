@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PreviewEquipement : MonoBehaviour {
 
-    public PlayerInfo player;
+    public PlayerController player;
     public GameObject previewItem;
 
     [SerializeField]
@@ -28,7 +28,7 @@ public class PreviewEquipement : MonoBehaviour {
     public void PointerEnter(int id) {
 
         previewItem.SetActive(true);
-        Equipement equip = player.equipements[id];
+        Equipement equip = player.player.equipements[id];
 
         itemPreview.sprite = equip.spriteUI;
         namePreview.text = equip.name;
@@ -43,4 +43,5 @@ public class PreviewEquipement : MonoBehaviour {
     public void PointerExit() {
         previewItem.SetActive(false);
     }
+
 }
