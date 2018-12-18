@@ -18,6 +18,6 @@ MonoBehaviour:
   criticalRate: 0
   criticalDamage: 0
   speed: 0
-  competence: {fileID: 11400000, guid: a3693d8ca1f1ed64a90fe9ffb96309ab, type: 2}
+  competence: {fileID: 11400000, guid: d559033baecb1684688d12639cf6b2c8, type: 2}
   tag: casque
   spriteUI: {fileID: 21300000, guid: 7d728722b1e55bd4481f2cd015350ea1, type: 3}

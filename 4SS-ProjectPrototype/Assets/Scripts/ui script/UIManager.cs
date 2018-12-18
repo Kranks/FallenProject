@@ -183,12 +183,12 @@ public class UIManager : MonoBehaviour
 
     public void fillStat()
     {
-        float life = player.player.life;
-        float attack = player.player.attack;
-        float defence= player.player.defence;
-        float criticalRate = player.player.criticalRate;
-        float criticalDamage = player.player.criticalDamage;
-        float Vit=player.player.speed;
+        float life = player.player.stats.life;
+        float attack = player.player.stats.attack;
+        float defence= player.player.stats.defence;
+        float criticalRate = player.player.stats.criticalRate;
+        float criticalDamage = player.player.stats.criticalDamage;
+        float Vit=player.player.stats.speed;
 
         foreach (Equipement equip in player.player.equipements)
         {

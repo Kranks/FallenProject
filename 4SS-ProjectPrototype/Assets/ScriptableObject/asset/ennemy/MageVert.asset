@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Name: MageVert
   m_EditorClassIdentifier: 
   enemyName: 
-  life: 90
-  speed: 6
-  precisionCoef: 10
-  dodgeCoef: 10
+  stats: {fileID: 11400000, guid: 93f3a8fa4fa8d5a4bb6c92db152ba69b, type: 2}
   shortRange: 0
   persoUp: {fileID: 21300084, guid: 8b10a6219a267bf4296e02bb14f5a008, type: 3}
   persoDown: {fileID: 21300014, guid: 8b10a6219a267bf4296e02bb14f5a008, type: 3}

@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Name: FireElemental
   m_EditorClassIdentifier: 
   enemyName: FireElemental
-  life: 120
-  speed: 5
-  precisionCoef: 1.3
-  dodgeCoef: 0.2
+  stats: {fileID: 11400000, guid: 6d5e18fdae7af4b4fabc31cf09c5dfed, type: 2}
   shortRange: 0
   persoUp: {fileID: 21300082, guid: b77c731711d5b944b8e6a1f4219815d8, type: 3}
   persoDown: {fileID: 21300010, guid: b77c731711d5b944b8e6a1f4219815d8, type: 3}

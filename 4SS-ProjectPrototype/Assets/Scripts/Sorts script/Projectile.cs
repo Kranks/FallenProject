@@ -38,7 +38,7 @@ public class Projectile : MonoBehaviour {
 
     public void ResolveDamage(EnemyController2D enemy) {
         float resultDamage = damage;
-        if (Random.Range(0f, 100f) > enemy.infos.dodgeCoef) {
+        if (Random.Range(0f, 100f) > enemy.infos.stats.dodgeCoef) {
             enemy.currentlife -= resultDamage;            
         } else {
             // set feedback
@@ -46,11 +46,11 @@ public class Projectile : MonoBehaviour {
     }
 
     public void ResolveDamage(PlayerController player) {
-        float resultDamage = damage - (player.player.defence * 0.3f);
+        float resultDamage = damage - (player.player.stats.defence * 0.3f);
         player.life -= resultDamage;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    /*private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Obstacle") {
             Destroy(this.gameObject);
         }
@@ -59,6 +59,24 @@ public class Projectile : MonoBehaviour {
             Destroy(this.gameObject);
         }
         if (collision.gameObject.tag == "Player") {
+            ResolveDamage(collision.gameObject.GetComponent<PlayerController>());
+            Destroy(this.gameObject);
+        }
+    }*/
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            Destroy(this.gameObject);
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            ResolveDamage(collision.gameObject.GetComponent<EnemyController2D>());
+            Destroy(this.gameObject);
+        }
+        if (collision.gameObject.tag == "Player")
+        {
             ResolveDamage(collision.gameObject.GetComponent<PlayerController>());
             Destroy(this.gameObject);
         }
