@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         player = Instantiate(infos);
+        player.stats = Instantiate(infos.stats);
+
         body = GetComponent<Rigidbody2D>();
         image = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();

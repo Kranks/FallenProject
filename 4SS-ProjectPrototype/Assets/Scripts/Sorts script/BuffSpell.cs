@@ -11,12 +11,16 @@ public class BuffSpell : Spell {
     public override void launch(Vector3 position) {
         Collider2D[] targets = Physics2D.OverlapCircleAll(position, portee);
         foreach (var target in targets) {
-            Aspect aspect = target.GetComponent<Aspect>();
-            if (aspect.aspectType == targetType) {
-                if (target.GetComponent<EnemyController2D>())
-                    Buff(target.GetComponent<EnemyController2D>());
-                if (target.GetComponent<PlayerController>()) {
-                    Buff(target.GetComponent<PlayerController>());
+            if (!target.isTrigger) {
+                Aspect aspect = target.GetComponent<Aspect>();
+                if (aspect) {
+                    if (aspect.aspectType == targetType) {
+                        if (target.GetComponent<EnemyController2D>())
+                            Buff(target.GetComponent<EnemyController2D>());
+                        if (target.GetComponent<PlayerController>()) {
+                            Buff(target.GetComponent<PlayerController>());
+                        }
+                    }
                 }
             }
         }
@@ -42,6 +46,7 @@ public class BuffSpell : Spell {
     }
 
     IEnumerator PlayerBuff(PlayerController player) {
+        Debug.Log("Coroutine");
         Stats currentStats = Instantiate(player.player.stats);
         player.player.stats.Add(stats);
         yield return new WaitForSeconds(duree);
