@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public Image vie;
     
-    public PlayerInfo player;
+    public PlayerInfo infos;
     public float life;
 
     private Rigidbody2D body;
@@ -32,13 +32,17 @@ public class PlayerController : MonoBehaviour
 
     public GameObject MenuEquiper;
     public GameObject MenuPreview;
+    public GameObject MenuPreviewEncours;
 
     public Dictionary<string, int> dicoTagEquip;
 
     public bool end = false;
+    public PlayerInfo player;
+    public GameObject prefabEquip;
 
     void Start()
     {
+        player = Instantiate(infos);
         body = GetComponent<Rigidbody2D>();
         image = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -86,7 +90,6 @@ public class PlayerController : MonoBehaviour
         {
             image.sprite = persoLeft;
             direction = Vector2.left.normalized;
-            Debug.Log("Input");
             animator.SetLayerWeight(0, 0);
             animator.SetLayerWeight(1, 1);
         }
@@ -184,6 +187,15 @@ public class PlayerController : MonoBehaviour
             mousePosition.y - transform.position.y);
 
         return direction.normalized;
+    }
+
+    public void equiperItem(Equipement equip)
+    {
+        player.equipements[dicoTagEquip[equip.tag]] = equip;
+        MenuEquiper.SetActive(false);
+        MenuPreview.SetActive(false);
+        MenuPreviewEncours.SetActive(false);
+        prefabEquip.SetActive(false);
     }
 
     

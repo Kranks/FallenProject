@@ -27,7 +27,6 @@ public class Perspective2D : Sense {
                     if (aspect != null) {
                         //Check the aspect
                         if (aspect.aspectType == targetAspect) {
-                            print("Enemy Detected");
                             visibleTargets.Add(target);
                         }
                     }

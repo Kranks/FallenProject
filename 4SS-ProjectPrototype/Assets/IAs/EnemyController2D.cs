@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EnemyController2D : MonoBehaviour {
 
     public EnemyInfo infos;
-
+    public GameObject equipement;
     public Transform currentTarget;
 
     private Perspective2D view;
@@ -16,6 +16,7 @@ public class EnemyController2D : MonoBehaviour {
     private SpriteRenderer image;
 
     public List<Transform> waypoints = new List<Transform>();
+    
 
     private Animator states;
     public Image vie;
@@ -48,12 +49,20 @@ public class EnemyController2D : MonoBehaviour {
         infos.SetRange(this);
         spawnSkill = spawnSkillDown;
         maxLife = currentlife;
+
+        equipement = GameObject.Find("EquipementPrefab");
+        
     }
 
     void Update() {
-
+        
         if (currentlife <= 0) {
-            this.gameObject.SetActive(false); 
+            this.gameObject.SetActive(false);
+
+            //Instantiate(EquipementPrefab, this.transform.position, Quaternion.identity);
+            equipement.gameObject.SetActive(true);
+            equipement.GetComponent<equipementCollider>().equip = (Equipement)FactoryEquipement.createEquipement("casque");
+            equipement.transform.position = this.transform.position;
         }
         vie.fillAmount = (float)currentlife / maxLife;
 

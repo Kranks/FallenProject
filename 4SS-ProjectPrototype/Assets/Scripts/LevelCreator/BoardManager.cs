@@ -119,7 +119,7 @@ public class BoardManager : MonoBehaviour {
         BoardSetUp(offset, left, right, up, down);
         InitializeList(offset);
         layoutObjectAtRandom(wallTiles, wallCount.minimum, wallCount.maximum);
-        int ennemyCount = Random.Range(level*2,level*3);
+        int ennemyCount = Random.Range(level*3,level*5);
         layoutObjectAtRandom(ennemyTiles, ennemyCount, ennemyCount);
     }
 

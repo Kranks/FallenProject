@@ -11,17 +11,12 @@ public class BuffSpell : Spell {
     public override void launch(Vector3 position) {
         Collider2D[] targets = Physics2D.OverlapCircleAll(position, portee);
         foreach (var target in targets) {
-            if (!target.isTrigger) {
-                Aspect aspect = target.GetComponent<Aspect>();
-                if (aspect) {
-                    if (aspect.aspectType == targetType) {
-                        if (target.GetComponent<EnemyController2D>()) {
-                            Buff(target.GetComponent<EnemyController2D>());
-                        }
-                        if (target.GetComponent<PlayerController>()) {
-                            Buff(target.GetComponent<PlayerController>());
-                        }
-                    }
+            Aspect aspect = target.GetComponent<Aspect>();
+            if (aspect.aspectType == targetType) {
+                if (target.GetComponent<EnemyController2D>())
+                    Buff(target.GetComponent<EnemyController2D>());
+                if (target.GetComponent<PlayerController>()) {
+                    Buff(target.GetComponent<PlayerController>());
                 }
             }
         }
@@ -30,7 +25,6 @@ public class BuffSpell : Spell {
     public override void launch(Vector3 position, Transform target, Vector3 direction) {
         launch(position);
     }
-
 
     void Buff(EnemyController2D enemy) {
         enemy.StartCoroutine(EnemyBuff(enemy));
@@ -44,7 +38,7 @@ public class BuffSpell : Spell {
         Stats currentStats = Instantiate(enemy.infos.stats);
         enemy.infos.stats.Add(stats);
         yield return new WaitForSeconds(duree);
-        enemy.infos.stats.SetStats(currentStats);
+        enemy.infos.stats.SetStats(stats);
     }
 
     IEnumerator PlayerBuff(PlayerController player) {

@@ -15,10 +15,10 @@ public class Stats : ScriptableObject {
     public float dodgeCoef;
 
     public void Add(Stats stats) {
-        life = (life + stats.life <= 0f) ? 1f : life + stats.life;
+        life  += stats.life;
         attack += stats.attack;
         defence += stats.defence;
-        speed =  (speed+ stats.speed <= 0f) ? 0f : speed + stats.speed;
+        speed += stats.speed;
         criticalRate += stats.criticalRate;
         criticalDamage += stats.criticalDamage;
         precisionCoef += stats.precisionCoef;
