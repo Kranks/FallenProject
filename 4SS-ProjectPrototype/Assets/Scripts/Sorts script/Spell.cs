@@ -17,4 +17,5 @@ public abstract class Spell : ScriptableObject {
     public abstract void launch(Vector3 position, Transform target);
     public abstract void launch(Vector3 position);
 
+
 }

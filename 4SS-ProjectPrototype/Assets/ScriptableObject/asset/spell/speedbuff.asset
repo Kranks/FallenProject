@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomSort: Speed buff
   degats: 0
-  portee: 0.1
+  portee: 0
   duree: 12
   cooldown: 35
   element: buff

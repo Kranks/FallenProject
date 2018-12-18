@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomSort: Attaque buff
   degats: 0
-  portee: 0.1
+  portee: 0
   duree: 10
   cooldown: 15
   element: buff
