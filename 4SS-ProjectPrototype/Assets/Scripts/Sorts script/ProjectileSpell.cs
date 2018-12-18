@@ -11,11 +11,15 @@ public class ProjectileSpell : Spell {
         GameObject proj = Instantiate(prefab, position, Quaternion.identity);
         proj.GetComponent<Projectile>().Initialize(this);
     }
-    public override void launch(Vector3 position, Transform target)
+    public override void launch(Vector3 position, Transform target, Vector3 direction)
     {
-        GameObject proj = Instantiate(prefab, position, Quaternion.identity);
-        Vector2 direction = (target.position- position).normalized;
-        proj.GetComponent<Projectile>().Initialize(this, direction);
+        if (target) {
+            GameObject proj = Instantiate(prefab, position, Quaternion.identity);
+            Vector2 dir= (target.position- position).normalized;
+            proj.GetComponent<Projectile>().Initialize(this, dir);
+        } else {
+            launch(position);
+        }
     }
 
 }

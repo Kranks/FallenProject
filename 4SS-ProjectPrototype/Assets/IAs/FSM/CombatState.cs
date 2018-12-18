@@ -23,7 +23,7 @@ public class CombatState : StateMachineBehaviour {
             spellTimer[spell] -= Time.deltaTime;            
             if (spellTimer[spell] <= 0f && disToTarget <= spell.portee) {
                 //Instantiate(spell.prefab, enemy.GetComponentInChildren<Transform>().position, Quaternion.identity);
-                spell.launch(enemy.spawnSkill.transform.position, enemy.currentTarget);
+                spell.launch(enemy.spawnSkill.transform.position, enemy.currentTarget, Vector3.zero);
                 spellTimer[spell] = spell.cooldown;
             }
         }

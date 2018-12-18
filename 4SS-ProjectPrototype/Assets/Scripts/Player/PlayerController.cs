@@ -166,7 +166,7 @@ public class PlayerController : MonoBehaviour
 
     public void attack(int id) {
         SpriteUpdate();
-        this.player.equipements[id].competence.launch(spawSkill.transform.position);
+        this.player.equipements[id].competence.launch(spawSkill.transform.position, null, direction);
     }
 
     private void animate()

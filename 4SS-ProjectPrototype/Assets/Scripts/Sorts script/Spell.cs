@@ -14,7 +14,7 @@ public abstract class Spell : ScriptableObject {
     public string description;
     public GameObject prefab;
 
-    public abstract void launch(Vector3 position, Transform target);
+    public abstract void launch(Vector3 position, Transform target, Vector3 direction);
     public abstract void launch(Vector3 position);
 
 }

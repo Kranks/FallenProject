@@ -27,7 +27,7 @@ public class BuffSpell : Spell {
         }
     }
 
-    public override void launch(Vector3 position, Transform target) {
+    public override void launch(Vector3 position, Transform target, Vector3 direction) {
         launch(position);
     }
 
